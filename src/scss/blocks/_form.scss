@@ -1,0 +1,22 @@
+.contact__form {
+  .form-row {
+    max-width: 700px;
+    margin: auto;
+  }
+  .multi__fields {
+    display: flex;
+    gap: 1rem;
+  }
+  .fields__container {
+    margin-bottom: 1rem;
+    input,
+    textarea {
+      height: 50px;
+      background-color: #f2f2f2;
+      color: #888;
+    }
+    textarea {
+      height: 150px;
+    }
+  }
+}

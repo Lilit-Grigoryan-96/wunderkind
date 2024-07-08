@@ -1,0 +1,15 @@
+.numbers {
+  .numbers__count {
+    text-align: center;
+    p {
+      color: var(--title-color);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .num {
+      font-size: 94px;
+      font-weight: 700;
+      color: var(--btn-color);
+    }
+  }
+}

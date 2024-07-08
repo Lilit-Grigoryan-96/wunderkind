@@ -1,0 +1,32 @@
+.progress__section {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url("../img/pic-1.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  color: var(--white);
+  .progress__container {
+    align-items: baseline;
+    p {
+      color: var(--text-color);
+    }
+    .title-2 {
+      color: var(--btn-color);
+      letter-spacing: -1px;
+      b {
+        color: #fff;
+      }
+    }
+    .prs__bar {
+      height: 20px;
+      border-radius: 20px;
+      background-color: rgb(255, 255, 255, 0.1);
+      margin: 20px 0px;
+      &__colored {
+        background-color: var(--btn-color);
+        width: 50%;
+        border-radius: 100px;
+        transition: all 1s;
+      }
+    }
+  }
+}

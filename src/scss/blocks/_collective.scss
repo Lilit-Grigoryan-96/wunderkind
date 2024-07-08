@@ -1,0 +1,60 @@
+.collective {
+  position: relative;
+  &__cards {
+    .card {
+      margin: auto;
+      cursor: pointer;
+      max-width: 400px;
+      border: none;
+      p {
+        font-size: 15px;
+      }
+      img {
+        height: 320px;
+        object-fit: cover;
+        position: relative;
+      }
+      .card__hover {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 320px;
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        background-color: rgba(0, 0, 0, 0);
+        transition: all 1s ease;
+        opacity: 0;
+        .links a {
+          color: transparent;
+          padding: 10px;
+          transition: all 0.5s ease;
+          color: #fff;
+          font-size: 20px;
+          &:hover {
+            transform: scale(3);
+            color: var(--btn-color);
+          }
+        }
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.5);
+          opacity: 1;
+        }
+      }
+      &__body {
+        padding: 1rem 0;
+        .title-4 {
+          font-weight: 600;
+          color: rgb(85, 85, 85);
+        }
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  .swiper-pagination {
+    bottom: 50px;
+  }
+}

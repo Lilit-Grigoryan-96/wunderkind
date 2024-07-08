@@ -1,0 +1,49 @@
+.work {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url("../img/pic-1.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  .text__slider {
+    position: relative;
+    &__item {
+      text-align: center;
+      .title-2 {
+        font-size: 50px;
+        color: var(--white);
+      }
+      p {
+        background-color: var(--btn-color);
+        color: var(--white);
+        font-size: 12px;
+        display: inline-block;
+        padding: 5px 10px;
+      }
+    }
+    &:hover {
+      .arrow {
+        width: 20px;
+        &:after {
+          color: var(--white);
+        }
+      }
+    }
+    .arrow {
+      position: absolute;
+      transition: all 1s;
+      width: 300px;
+      color: #fff;
+      &:after {
+        font-family: "FontAwesome";
+        color: rgba(0, 0, 0, 0);
+        transition: all 1s;
+        font-size: 50px;
+      }
+    }
+    .swiper-button-next:after {
+      content: "\f054";
+    }
+    .swiper-button-prev:after {
+      content: "\f053";
+    }
+  }
+}

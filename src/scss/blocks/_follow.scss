@@ -1,0 +1,49 @@
+.follow {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url("../img/pic-1.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  color: var(--white);
+  &__heading {
+    .title-2 {
+      color: var(--white);
+    }
+    .title-4 {
+      color: var(--subtext-color);
+      span {
+        color: var(--btn-color);
+      }
+    }
+  }
+  &__socials {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 0;
+      gap: 30px;
+      li {
+        a {
+          i {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            color: white;
+            width: 100px;
+            height: 100px;
+            background-color: rgba(76, 81, 224, 0.2);
+            border-radius: 50%;
+          }
+          .title-5 {
+            color: white;
+          }
+          p {
+            font-size: 13px;
+            color: var(--text-color);
+          }
+        }
+      }
+    }
+  }
+}

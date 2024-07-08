@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--page-bg);
+  color: var(--text-color);
+  font-family: var(--font-main);
+  font-weight: 400;
+  text-wrap: balance;
+}
+
+main {
+  overflow-x: hidden;
+}
+section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  @include tablet {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+img {
+  display: block;
+}
+
+a {
+  color: var(--link-color);
+}
+
+.row > * {
+  padding: 0;
+}

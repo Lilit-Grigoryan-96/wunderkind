@@ -1,0 +1,12 @@
+.icon {
+  font-size: 40px;
+  color: var(--btn-color);
+  span {
+    position: absolute;
+    font-size: 150px;
+    color: var(--icon-bg);
+  }
+  @include tablet {
+    display: none;
+  }
+}

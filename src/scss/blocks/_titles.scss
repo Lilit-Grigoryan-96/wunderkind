@@ -1,0 +1,65 @@
+.title-1 {
+  font-size: 72px;
+  font-weight: 700;
+  font-family: var(--font-titles);
+  @include tablet {
+    font-size: 50px;
+  }
+  @include mobile {
+    font-size: 30px;
+  }
+}
+
+.title-2 {
+  font-size: 64px;
+  font-weight: 400;
+  font-family: var(--font-titles);
+  margin-bottom: 1rem;
+  @include tablet {
+    font-size: 50px;
+  }
+  @include mobile {
+    font-size: 40px;
+  }
+}
+
+.title-3 {
+  margin: 1em 0 0.5em;
+  font-size: 26px;
+  font-weight: 700;
+  font-family: var(--font-titles);
+  margin-bottom: 0.5rem;
+}
+
+.title-4 {
+  font-size: 20px;
+  font-weight: 300;
+  font-family: var(--font-titles);
+  margin-bottom: 0.5rem;
+}
+.title-5 {
+  font-size: 18px;
+  font-weight: 300;
+  font-family: var(--font-titles);
+  margin-bottom: 0.5rem;
+}
+
+.title-6 {
+  font-size: 13px;
+  font-weight: 400;
+  font-family: var(--font-titles);
+  margin-bottom: 0.5rem;
+}
+
+.section__heading {
+  margin-bottom: 3rem;
+  .title-2 {
+    color: var(--title-color);
+  }
+  .title-4 {
+    color: var(--subtext-color);
+    span {
+      color: var(--btn-color);
+    }
+  }
+}

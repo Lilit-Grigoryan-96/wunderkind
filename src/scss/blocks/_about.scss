@@ -1,0 +1,31 @@
+.about {
+  .about__cards {
+    .about__cards__col {
+      padding: 10px;
+      .about__card {
+        &__title {
+          color: rgb(25, 26, 28);
+          b {
+            font-size: 22px;
+            font-weight: 700;
+          }
+        }
+        &__text {
+          color: rgb(136, 136, 136);
+          font-size: 15px;
+          font-weight: 300;
+        }
+        &__icon__cont {
+          display: flex;
+          justify-content: flex-end;
+          padding-right: 1rem;
+        }
+      }
+    }
+    @include desktop {
+      &.mb-5 {
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+}
