@@ -1,5 +1,6 @@
 $(document).ready(function() {
-  //change style of nuvbar on scroll
+  //change navbar style on scroll
+
   $(window).on("scroll", function() {
     if ($(window).scrollTop() > 100) {
       $(".header__nav").addClass("scroll");
@@ -9,6 +10,7 @@ $(document).ready(function() {
   });
 
   //progress bars
+
   $(".progress__section").waypoint(function() {
     $(".progress-bar").each(function() {
       var max = $(this).data("max");
@@ -21,6 +23,7 @@ $(document).ready(function() {
   });
 
   //swiper sliders
+
   new Swiper(".image-slider", {
     spaceBetween: 30,
     pagination: {
@@ -54,12 +57,14 @@ $(document).ready(function() {
   });
 
   // youtube video play button
+
   $("#player").on("click", function() {
     $("#player").css({ display: "none" });
     $("#img").css({ display: "none" });
   });
 
   // count up numbers
+
   $(".numbers").waypoint(function() {
     $(".num").each(function() {
       $(this)
@@ -80,6 +85,7 @@ $(document).ready(function() {
   });
 
   // scroll up button
+
   $(".scroll-up").on("click", function() {
     $("html").animate({ scrollTop: 0 }, 1000);
   });
